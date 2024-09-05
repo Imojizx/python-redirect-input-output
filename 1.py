@@ -1,6 +1,8 @@
 import sys
 fout=open("input.txt",'rt')
 sys.stdin=fout
+fout=open("output.txt",'wt')
+sys.stdout=fout
 while True:
     numbers=input("~>").strip().split(" ")
     if numbers[0]=="add":
@@ -11,3 +13,4 @@ while True:
         print(int(numbers[1])/int(numbers[2]))
     if numbers[0]=="min":
         print(int(numbers[1])-int(numbers[2]))
+        
